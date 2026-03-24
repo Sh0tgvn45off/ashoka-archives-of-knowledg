@@ -1,46 +1,21 @@
-// Dynamic Tile Size
-function resizeToFit() {
-    const dpr = window.devicePixelRatio || 1;
-    const width = window.innerWidth * dpr;
-    const height = window.innerHeight * dpr;
-    // Logic to set tile size based on screen dimensions
+// game.js
+
+function dynamicResizeToFit() {
+    // Code to dynamically resize the game grid to fit the screen.
 }
 
-// Perfect Maze Generator
-function generatePerfectMaze(width, height) {
-    // Implementation of maze generation ensuring connectivity
+function generateMaze() {
+    // Maze generation logic that guarantees connectivity.
 }
 
-// Spawning Curious Points
-function spawnCuriousPoints(tiles) {
-    // Logic to spawn curious points on reachable tiles ensuring path from spawn
+function placeCuriousPoints() {
+    // Logic for placing curious points on reachable tiles.
 }
 
-// Spawning Exit
-function spawnExit(tiles) {
-    // Logic to spawn exit on reachable tile
+function pathfindingGuard() {
+    // Code for guards that pathfind on walkable tiles with increasing speed per level.
 }
 
-// Guard Entities
-class Guard {
-    constructor() {
-        this.speed = 1;
-        this.path = [];
-    }
-
-    move() {
-        // Logic for guard movement along walkable tiles using BFS
-    }
+function bfsTriggerGasDiffusion() {
+    // BFS-triggered gas diffusion logic.
 }
-
-function updateGuards() {
-    // Update guard positions and increase speed per level
-}
-
-function draw() {
-    // Existing draw logic
-    updateGuards(); // Render guards
-    // Logic to render curious points
-}
-
-// Existing gas BFS trigger and diffusion spread logic
